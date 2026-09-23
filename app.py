@@ -135,7 +135,7 @@ def load_default_examples():
         add_comment(text, cat)
 
 # ── 5. Interfaz Principal ──────────────────────────────────────
-st.title("🧠 Análisis de Sentimiento")
+st.title("🧠 Análisis de Sentimiento - Sabor & Tradición")
 st.caption("Combina tu sistema interactivo con el panel de resumen.")
 st.divider()
 
@@ -155,7 +155,7 @@ with col_left:
             with col_input:
                 st.text_area(
                     "Texto a analizar:",
-                    placeholder="Ej.: The car is amazing / Este producto es terrible…",
+                    placeholder="Ej.: The food was cold. / Es un lugar agradable…",
                     height=120,
                     key="single_comment_text"
                 )
