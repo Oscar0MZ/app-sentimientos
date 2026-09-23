@@ -135,7 +135,7 @@ def load_default_examples():
         add_comment(text, cat)
 
 # ── 5. Interfaz Principal ──────────────────────────────────────
-st.title("🧠 Análisis de Sentimiento - Sabor & Tradición")
+st.title("🧠 Análisis de Sentimiento - Restaurante Sabor & Tradición")
 st.caption("Combina tu sistema interactivo con el panel de resumen.")
 st.divider()
 
