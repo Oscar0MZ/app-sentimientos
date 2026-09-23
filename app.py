@@ -71,7 +71,7 @@ def add_comment(comment_es: str, category: str, pre_translated_en: str = None):
 
     # Clasificamos
     if polarity > 0.20:
-        sentiment, emoji = "Positivo :D", "😊"
+        sentiment, emoji = "Positivo 😊", "😊"
     elif polarity < -0.20:
         sentiment, emoji = "Negativo :(", "😞"
     else:
