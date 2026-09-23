@@ -236,9 +236,9 @@ with col_right:
         
         # Cálculos de Métricas
         total_comments = len(df)
-        positives = len(df[df["Sentimiento"] == "Positivo :D"])
+        positives = len(df[df["Sentimiento"] == "Positivo 😊"])
         neutrals = len(df[df["Sentimiento"] == "Neutral 😐"])
-        negatives = len(df[df["Sentimiento"] == "Negativo :("])
+        negatives = len(df[df["Sentimiento"] == "Negativo 😞"])
         
         sentiment_counts = df["Sentimiento"].value_counts()
         prevailing_sentiment = sentiment_counts.idxmax()
