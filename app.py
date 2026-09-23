@@ -70,9 +70,9 @@ def add_comment(comment_es: str, category: str, pre_translated_en: str = None):
     subjectivity = blob.sentiment.subjectivity
 
     # Clasificamos
-    if polarity > 0.10:
+    if polarity > 0.20:
         sentiment, emoji = "Positivo :D", "😊"
-    elif polarity < -0.10:
+    elif polarity < -0.20:
         sentiment, emoji = "Negativo :(", "😞"
     else:
         sentiment, emoji = "Neutral 😐", "😐"
