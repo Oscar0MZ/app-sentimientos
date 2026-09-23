@@ -71,7 +71,7 @@ def add_comment(comment_es: str, category: str, pre_translated_en: str = None):
 
     # Clasificamos
     if polarity > 0.20:
-        sentiment, emoji = "Positivo 😊", "😊"
+        sentiment, emoji = "Positivo :D", "😊"
     elif polarity < -0.20:
         sentiment, emoji = "Negativo :(", "😞"
     else:
@@ -113,7 +113,6 @@ def process_single_comment():
     return "SUCCESS"
 
 def load_default_examples():
-    """Carga 15 ejemplos variados (Positivos, Negativos y Neutrales)."""
     examples = [
         ("La comida está cara pero es demasiado buena, vale totalmente la pena.", "Precio / Valor"),
         ("El mesero fue muy grosero y tardaron 45 minutos en traer el plato.", "Atención y Servicio"),
@@ -236,9 +235,9 @@ with col_right:
         
         # Cálculos de Métricas
         total_comments = len(df)
-        positives = len(df[df["Sentimiento"] == "Positivo 😊"])
+        positives = len(df[df["Sentimiento"] == "Positivo :D"])
         neutrals = len(df[df["Sentimiento"] == "Neutral 😐"])
-        negatives = len(df[df["Sentimiento"] == "Negativo 😞"])
+        negatives = len(df[df["Sentimiento"] == "Negativo :("])
         
         sentiment_counts = df["Sentimiento"].value_counts()
         prevailing_sentiment = sentiment_counts.idxmax()
